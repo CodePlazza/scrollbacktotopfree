@@ -1,0 +1,117 @@
+/* scroll to top  button styles */
+div#cp-sbttb {
+opacity:0;
+position: fixed;
+z-index: 1000;
+display: -webkit-box;
+cursor:pointer;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-align: center;
+-ms-flex-align: center;
+align-items: center;
+-webkit-box-pack: center;
+-ms-flex-pack: center;
+justify-content: center;
+margin: 16px;
+pointer-events: initial; 
+text-decoration: none;
+-webkit-box-shadow: 0 0 2px transparent;
+box-shadow: 0 0 2px transparent;
+transition: background-color .25s ease,border-color .25s ease,box-shadow .25s ease;	
+}
+/* Scroll Back to Top Button - Background Color and Border */
+.sbttb-themered{
+	background-color: #b11c1c;
+	color: #fff;
+	-webkit-box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 5%);
+	box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 5%);   
+	border: 3px solid #fff;
+	border-radius: 999px;
+}
+/* Scroll Back to Top Button -  on mouse over - Background Color and Border*/
+.sbttb-themered:hover {
+	background-color: #ff0000;
+}
+/* Scroll Back to Top Button - Background Color and Border*/
+.sbttb-themelight{
+	background-color: #1e4291;
+	color: #fff;
+	-webkit-box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 5%);
+	box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 5%);   
+	border: 3px solid #fff;
+	border-radius: 999px;
+}
+/* Scroll Back to Top Button -  on mouse over - Background Color and Border*/
+.sbttb-themelight:hover {
+	background-color: #004fff;
+}
+/* Scroll Back to Top Button - Size - Medium */
+.sbttb-medium {
+    width: 3.25em;
+    height: 3.25em;
+}
+/* Scroll Back to Top Button - Size - Mini */
+.sbttb-mini {
+    width: 1.625em;
+    height: 1.625em;
+}
+/* Scroll Back to Top Button - Bottom Right Position */
+.sbttb-bottom-right {
+    bottom: 0;
+    right: 0
+}
+/* Scroll Back to Top Button - Bottom Left Position */
+.sbttb-bottom-left {
+    bottom: 0;
+    left: 0;
+}
+/* Scroll Back to Top Button - Bottom Center Position */
+.sbttb-bottom-center {
+    bottom: 0;
+    left: 0;
+    right: 0;
+	transform-origin: 50% 100%;
+}
+/* SVG icon color */
+.cp-sbttb-icon{
+	fill:#FFFFFF;
+}
+/* Scroll Back to Top Button -  button text color*/
+#cp-sbttb > span {
+	font-size: 18px;
+	color:#FFF;
+}
+/* Scroll Back to Top Button -  text color on mouse over */
+#cp-sbttb:hover > span  {
+	color:#FFF;
+}
+/* Scroll Back to Top Button -  fade in*/
+.sbttb-fadein{
+	animation: fadeInAnimation ease 2s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+/* Scroll Back to Top Button -  fade out */
+.sbttb-fadeout{
+	animation: fadeOutAnimation ease 1s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+/* Scroll Back to Top Button -  keyframes */
+@keyframes fadeInAnimation {
+	0% {
+	opacity: 0;
+	}
+	100% {
+	opacity: 1;
+	}
+}
+@keyframes fadeOutAnimation {
+	0% {
+	opacity: 1;
+	}
+	100% {
+	opacity: 0;
+	}
+}
